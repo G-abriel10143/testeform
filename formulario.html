@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario.css">
+    <title>Formulario De Contato</title>
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+</head>
+<body>
+    <h1>Solicite um contato</h1>
+    <h4>É facil, preencha o formulário abaixo que entratremos em contato com você</h4>
+    <form method="get">
+        <div>
+            <input type="text" id="robo" class="frobo">
+        </div>
+        <div>
+            <input type="text" id="nome" placeholder="Nome" class="fnome" onclick="cron()">
+        </div>
+        <div>
+            <input type="email" id="e-mail" placeholder="Email" class="femail">
+        </div>
+        <div>
+            <input type="text" id="telefone" placeholder="Telefone" class="ftelefone">
+        </div>
+        <div>
+            <textarea id="mensagem" cols="30" rows="10" placeholder="Digite Aqui Sua Mensagem" class="fmensagem"></textarea>
+        </div>
+        <div class="h-captcha" data-sitekey="2a4845c0-36c0-4e18-b0c9-2078cb9603c1"></div>
+    </form>
+    <button onclick="validar()">Enviar</button>
+
+    <div class="cronometro">
+        <span class="minutos" id="min">00</span>:<span class="segundos" id="seg">00</span>
+    </div>
+    <script src="js/formulario.js"></script>
+</body>
+</html>
